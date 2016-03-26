@@ -1,280 +1,389 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-		<link rel="shortcut icon" href="./gambar/favicon.ico" type="image/x-icon">
-		<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-		<title>Smile :)</title>
-		<style>
-			html{
-				 background: url(./gambar/bg.jpg) no-repeat center center fixed;
-			}
-			.container{
-				margin:0 auto;
-				width:900px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs"><!-- Pengaturan header tetap muncul pada saat layar dikecilkan -->
-			<div class="mdl-layout__header mdl-layout__header--waterfall"><!-- Membuat header -->
-				<div class="mdl-layout__header-row"> <!-- Menyediakan ruang untuk navigasi/logo/apapun di header -->
-					<span class="mdl-layout-title"> <!-- Memberikan title/logo pada header -->
-						<h4>Sutrisna</h4>
-					</span>
-					
-					<div class="android-header-spacer mdl-layout-spacer"></div> <!-- Memisahkan antar navigasi kiri dan kanan | Maka setelah tag ini navigasi akan ke sebelah kanan -->
-					
-					<div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width"><!-- Pengaturan ruang untuk search button -->
-						<label class="mdl-button mdl-js-button mdl-button--icon" for="search-field"><!-- Menyiapkan tempat icon search -->
-							<i class="material-icons">search</i><!-- Mengambil icon serach material design -->
-						</label>
-						<div class="mdl-textfield__expandable-holder"><!-- Menyiapkan textbox untuk serach dan akan muncul ketika button search ditekan -->
-						  <input class="mdl-textfield__input" type="text" id="search-field"><!-- Textboxnya -->
-						</div>
-					</div>
-					
-					<!-- Left aligned menu below button -->
-					<button id="d"
-							class="mdl-button mdl-js-button mdl-button--icon">
-					  <i class="material-icons">more_vert</i>
-					</button>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-						for="d">
-					  <li class="mdl-menu__item">Pengaturan</li>
-					</ul>
-				</div>
-				
-			</div> <!-- End Membuat header -->
-			
-			<div class="mdl-layout__drawer" style="background-color:white;"> <!-- Menyiapkan menu spageti -->
-				<span class="mdl-layout-title">
-					<img src="./gambar/logo.jpg"></img>
-				</span> <!-- Judul menu -->
-				<nav class="mdl-navigation"> <!-- >Menyiapkan navigasi</!-->
-				  <a class="mdl-navigation__link" href="">CURRICULUM VITAE</a>
-				  <div class="android-drawer-separator"><hr></div>
-				  <a class="mdl-navigation__link" href="">PORTOFOLIO</a>
-				</nav>
-			</div>
-			
-		<main class="mdl-layout__content">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="./gambar/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  	
+	<title>Smile :)</title>
+</head>
+<body>
+<main class="mdl-layout__content">
 			<div class="page-content">
-				<div class="container mdl-grid">
-					<div class="mdl-cell mdl-cell--12-col">
-						<div class="mdl-card mdl-shadow--2dp" style="width:880px;">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">CURRICULUM VITAE</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-							<p><b>SUTRISNA<br>
-								Pasir Limus No.12 Desa Wangunharja<br>
-								Kec.Cikarang Utara Kab.Bekasi<br>
-								Bekasi 17530</b>
-								<hr>
-							</p>
-							<table>
-								<tr>
-									<td><b>DATA DIRI</b></td>
-								</tr>
-								<tr>
-									<td><b>Tempat, Tanggal Lahir</b></td>
-									<td><b>:</b></td>
-									<td>Bekasi, 11 November 1992</td>
-								</tr>					
-								<tr>
-									<td>Jenis Kelamin</td>
-									<td>:</td>
-									<td>Laki-laki</td>
-								</tr>
-								<tr>
-									<td>Agama</td>
-									<td>:</td>
-									<td>Islam</td>
-								</tr>
-								<tr>
-									<td>Status</td>
-									<td>:</td>
-									<td>Belum Menikah</td>
-								</tr>
-								<tr>
-									<td>No.Tlp</td>
-									<td>:</td>
-									<td>089660470957</td>
-								</tr>
-								<tr>
-									<td>Soft Skill</td>
-									<td>:</td>
-									<td>
-										Web Programming<br>
-										Java Programming<br>
-										Android Programming
-									</td>
-								</tr>
-								<tr>
-									<td>e-mail</td>
-									<td>:</td>
-									<td>punyasutrisna@gmail.com</td>
-								</tr>
-							</table>
-							
-							<table>
-								<tr>
-									<td>PENDIDIKAN</td>
-								</tr>
-								<tr>
-									<td>1.FORMAL</td>
-								</tr>
-								<tr>
-								<td>
-									<table class="mdl-data-table">
-										<th>LEVEL</th>
-										<th>PERIODE</th>
-										<th>ASAL SEKOLAH</th>
-										<th>KOTA</th>
-										<th>JURUSAN</th>
+				
+			
+	<a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
+	
+	<div class="cd-projects-container">
+		<ul class="cd-projects-previews">
+			<li>
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>CURRICULUM VITAE</h2>
+						<p>Sutrisna | 11 November 1992</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>BISANGAJI STARTUP</h2>
+						<p>Membuat startup ide kreasi sendiri</p>
+					</div>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2 style="color:black;">WEB SEKOLAH</h2>
+						<p style="color:black;">Project membuat web sekolah di Bogor</p>
+					</div>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#0">
+					<div class="cd-project-title">
+						<h2>ANDROID APPS</h2>
+						<p>Aplikasi android yang pernah dibuat</p>
+					</div>
+				</a>
+			</li>
+		</ul> <!-- .cd-projects-previews -->
+
+		<ul class="cd-projects">
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>CURRICULUM VITA</h2>
+						<p>Scroll untuk detail</p>
+					</div> 
+				</div>
+
+				<div class="cd-project-info">
+							<div class="mdl-grid">
+							<div class="mdl-cell mdl-cell--12-col">
+									<div class="mdl-card__title">
+										<h2 class="mdl-card__title-text">CURRICULUM VITAE</h2>
+									</div>
+									<hr>
+									<div class="mdl-card__supporting-text">
+									<table>
 										<tr>
-											<td>STRATA 1</td>
-											<td>2011-2015</td>
-											<td>UIN SUNAN GUNUNG DJATI</td>
-											<td>Bandung</td>
-											<td>Teknik Informatika</td>
+											<td>SUTRISNA</td>
 										</tr>
 										<tr>
-											<td>SMA</td>
-											<td>2008-2011</td>
-											<td>SMAN 2 CIKARANG UTARA</td>
-											<td>Bekasi</td>
-											<td>IPA</td>
+											<td>Pasir Limus No.12 Desa Wangunharja</td>
+										</tr>
+										<tr>
+											<td>Kec.Cikarang Utara Kab.Bekasi</td>
+										</tr>
+										<tr>
+											<td>Bekasi 17530</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td><p style="font-size:11pt;">DATA DIRI</p></td>
+										</tr>
+										<tr>
+											<td><b>Tempat, Tanggal Lahir</b></td>
+											<td><b>:</b></td>
+											<td>Bekasi, 11 November 1992</td>
+										</tr>					
+										<tr>
+											<td>Jenis Kelamin</td>
+											<td>:</td>
+											<td>Laki-laki</td>
+										</tr>
+										<tr>
+											<td>Agama</td>
+											<td>:</td>
+											<td>Islam</td>
+										</tr>
+										<tr>
+											<td>Status</td>
+											<td>:</td>
+											<td>Belum Menikah</td>
+										</tr>
+										<tr>
+											<td>No.Tlp</td>
+											<td>:</td>
+											<td>089660470957</td>
+										</tr>
+										<tr>
+											<td>Soft Skill</td>
+											<td>:</td>
+											<td>
+												Web Programming<br>
+												Java Programming<br>
+												Android Programming
+											</td>
+										</tr>
+										<tr>
+											<td>e-mail</td>
+											<td>:</td>
+											<td>punyasutrisna@gmail.com</td>
 										</tr>
 									</table>
-								</td>
-								</tr>
-							</table>
-							
-							<table>
-								<tr>
-									<td>NON-FORMAL</td>
-								</tr>
-								<tr>
-									<td>
-										<table class="mdl-data-table">
-											<th>PERIODE</th>
-											<th>DESKRIPSI</th>
-											<th>PENYELENGGARA</th>
-											<th>SERTIFIKAT</th>
-											<tr>
-												<td>2016</td>
-												<td>Junior Web Programming</td>
-												<td>BPPTIK</td>
-												<td>Peserta</td>
-											</tr>
-											<tr>
-												<td>2016</td>
-												<td>Junior Programming</td>
-												<td>BPPTIK</td>
-												<td>Peserta</td>
-											</tr>
-											<tr>
-												<td>2014</td>
-												<td>Programming With Java</td>
-												<td>AplysIT Bandung</td>
-												<td>Peserta</td>
-											</tr>
-											<tr>
-												<td>2014</td>
-												<td>Digital Startup</td>
-												<td>UIN SUNAN GUNUNG DJATI BANDUNG</td>
-												<td>Peserta</td>
-											</tr>
-											<tr>
-												<td>2012</td>
-												<td>Network For Connecting People</td>
-												<td>UIN SUNAN GUNUNG DJATI BANDUNG</td>
-												<td>Peserta</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							
-							<hr>
-							</div>
-							
-						</div><!-- end CV -->
-					</div>
-				</div>
-				
-				
-				<div class="mdl-grid">
-					<div class="mdl-cell mdl-cell--12-col">
-						<div class="container mdl-grid">
-							<div class="mdl-cell mdl-cell--12-col">
-								<div class="mdl-card mdl-shadow--2dp" style="width:880px;">
-									<div class="mdl-card__title">
-										<h2 class="mdl-card__title-text">PORTOFOLIO</h2>
+									
+									<table>
+										<tr>
+											<td><p style="font-size:11pt;">PENDIDIKAN</p></td>
+										</tr>
+										<tr>
+											<td>1.FORMAL</td>
+										</tr>
+										<tr>
+										<td>
+											<table class="mdl-data-table">
+												<th>LEVEL</th>
+												<th>PERIODE</th>
+												<th>ASAL SEKOLAH</th>
+												<th>KOTA</th>
+												<th>JURUSAN</th>
+												<tr>
+													<td>STRATA 1</td>
+													<td>2011-2015</td>
+													<td>UIN SUNAN GUNUNG DJATI</td>
+													<td>Bandung</td>
+													<td>Teknik Informatika</td>
+												</tr>
+												<tr>
+													<td>SMA</td>
+													<td>2008-2011</td>
+													<td>SMAN 2 CIKARANG UTARA</td>
+													<td>Bekasi</td>
+													<td>IPA</td>
+												</tr>
+											</table>
+										</td>
+										</tr>
+									</table>
+									
+									<table>
+										<tr>
+											<td>2.NON-FORMAL</td>
+										</tr>
+										<tr>
+											<td>
+												<table class="mdl-data-table">
+													<th>PERIODE</th>
+													<th>DESKRIPSI</th>
+													<th>PENYELENGGARA</th>
+													<th>SERTIFIKAT</th>
+													<tr>
+														<td>2016</td>
+														<td>Junior Web Programming</td>
+														<td>BPPTIK</td>
+														<td>Peserta</td>
+													</tr>
+													<tr>
+														<td>2016</td>
+														<td>Junior Programming</td>
+														<td>BPPTIK</td>
+														<td>Peserta</td>
+													</tr>
+													<tr>
+														<td>2014</td>
+														<td>Programming With Java</td>
+														<td>AplysIT Bandung</td>
+														<td>Peserta</td>
+													</tr>
+													<tr>
+														<td>2014</td>
+														<td>Digital Startup</td>
+														<td>UIN SUNAN GUNUNG DJATI BANDUNG</td>
+														<td>Peserta</td>
+													</tr>
+													<tr>
+														<td>2012</td>
+														<td>Network For Connecting People</td>
+														<td>UIN SUNAN GUNUNG DJATI BANDUNG</td>
+														<td>Peserta</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									
 									</div>
 									
-									<div class="mdl-card__supporting-text">
-									<p>
+								</div><!-- end CV -->
+							
+						</div>
+			
+				
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>Bisangaji Startup</h2>
+						<p>Scroll untuk detail</p>
+					</div> 
+				</div>
+
+				<div class="cd-project-info">
+				
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--12-col">
+							<div class="container mdl-grid">
+								<div class="mdl-cell mdl-cell--12-col">
+									
+										<div class="mdl-card__title">
+											<h2 class="mdl-card__title-text">PORTOFOLIO</h2>
+										</div>
+										<div class="mdl-card__supporting-text">
+											<p style="font-size:11pt;">
 											Pengalaman  saya  dalam  dunia  programming  khususnya  pada  platform  mobile  dan  Web 
 											Based  dimulai  dari  perkuliahan  yaitu  dengan  membuat  project-project  kecil  dan  tugas  yang 
 											diberikan oleh dosen. Berikut adalah perjalanan awal saya membuat aplikasi berbasis mobile 
 											dan Web Based:
-										</p>
+											</p>
 										<hr>
-									<h4>Bisangaji Startup</h4>
-									<p>
-									Bisangaji adalah sebuah situs online yang menghubungkan jamaah dengan ustad dan ustadzah 
-									untuk mempermudah jamaah mengundang ustad atau ustadzah dalam acara islamiah. 
-									Terdapat banyak kemudahan yang diberikan situs bisangaji diantaranya dapat melihat 
-									schedule penceramah, memilih penceramah sesuai dengan acara yang akan dibuat dll.
-									<a href="http://bisangaji.herokuapp.com/">Menuju website</a>
-									</p>
-										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/bs.PNG" width="800px"></img><br>
+										<p style="font-size:12pt;">BISANGAJI STARTUP</p>
+											<p style="font-size:11pt;">
+											Bisangaji adalah sebuah situs online yang menghubungkan jamaah dengan ustad dan ustadzah 
+											untuk mempermudah jamaah mengundang ustad atau ustadzah dalam acara islamiah. 
+											Terdapat banyak kemudahan yang diberikan situs bisangaji diantaranya dapat melihat 
+											schedule penceramah, memilih penceramah sesuai dengan acara yang akan dibuat dll.
+											<i><a href="http://bisangaji.herokuapp.com/" style="color:green;">Menuju website</a></i>
+											<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/bs.PNG" width="800px"></img>
+											</p>
+											
+										</div>
+									
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+					
+					
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2 style="color:black;">WEB SEKOLAH</h2>
+						<p style="color:black;">Scroll untuk detail</p>
+					</div> 
+				</div>
+
+				<div class="cd-project-info">
+					
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--12-col">
+							<div class="container mdl-grid">
+								<div class="mdl-cell mdl-cell--12-col">
+									
+										<div class="mdl-card__title">
+											<h2 class="mdl-card__title-text">PORTOFOLIO</h2>
+										</div>
+										<div class="mdl-card__supporting-text">
+											<p style="font-size:11pt;">
+											Pengalaman  saya  dalam  dunia  programming  khususnya  pada  platform  mobile  dan  Web 
+											Based  dimulai  dari  perkuliahan  yaitu  dengan  membuat  project-project  kecil  dan  tugas  yang 
+											diberikan oleh dosen. Berikut adalah perjalanan awal saya membuat aplikasi berbasis mobile 
+											dan Web Based:
+											</p>
 										<hr>
-										<h4>SMA Mathla’ulhuda Bogor</h4>
-										<p>Membuat website sekolah menengah atas Mathla’ulhuda di Parung Panjang Bogor yang 
+										<p style="font-size:12pt;">SMA Mathla’ulhuda Bogor</p>
+											<p style="font-size:11pt;">Membuat website sekolah menengah atas Mathla’ulhuda di Parung Panjang Bogor yang 
 										memuat berita terbaru seputar kegiatan-kegiatan sekolah serta para pengajar dan prestasi 
-										siswa.</p>
-										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/mat.PNG" width="800px"></img><br>
-										<h4>ALARM OF THE DEATH</h4><br>
-										<p>
+										siswa.
+										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/mat.PNG" width="800px"></img>
+										</p>
+											
+										</div>
+									
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="preview-image">
+					<div class="cd-project-title">
+						<h2>ANDROID APPS</h2>
+						<p>Scroll untuk detail</p>
+					</div> 
+				</div>
+
+				<div class="cd-project-info">
+					
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--12-col">
+							<div class="container mdl-grid">
+								<div class="mdl-cell mdl-cell--12-col">
+									
+										<div class="mdl-card__title">
+											<h2 class="mdl-card__title-text">PORTOFOLIO</h2>
+										</div>
+										<div class="mdl-card__supporting-text">
+											<p style="font-size:11pt;">
+											Pengalaman  saya  dalam  dunia  programming  khususnya  pada  platform  mobile  dan  Web 
+											Based  dimulai  dari  perkuliahan  yaitu  dengan  membuat  project-project  kecil  dan  tugas  yang 
+											diberikan oleh dosen. Berikut adalah perjalanan awal saya membuat aplikasi berbasis mobile 
+											dan Web Based:
+											</p>
+										<hr>
+										<p style="font-size:12pt;">ALARM OF THE DEATH</p><br>
+										<p style="font-size:11pt;">
 										Aplikasi ini berawal dari banyaknya aplikasi alarm yang telah dibuat sebelumnya, tapi alarm ini 
 										sedikit berbeda dari aplikasi yang lainnya.
 										Banyak fitur alarm yang sudah ada sebelumnya seperti mematikan alarm dengan cara shake
 										atau dengan menggoyang-goyangkan handphone sehingga alarm dapat dimatikan.
 										Dalam aplikasi alarm yang saya buat ini agak sedikit berbeda yaitu dengan  membalikan atau 
 										memutar kondisi handphone sehingga alarm bisa berhenti.
-										</p>
 										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/a1.PNG" width="800px"></img><br>
-										<h4>GAMPAR (GAMBAR PARODI)</h4><br>
-										<p>
+										</p>
+										<hr>
+										<p style="font-size:12pt;">GAMPAR (GAMBAR PARODI)</p><br>
+										<p style="font-size:11pt;">
 											Aplikasi  ini  berbarengan  dengan  boomingnya  aplikasi  game  tebak  gambar,  sehingga  saya 
 											mempunyai ide untuk membuat game yang serupa tapi lagi-lagi saya memberikan sentuhanan 
 											yang berbeda pada aplikasi yang saya buat.
 											Jika aplikasi tebak gambar, menebak apa maksud dari gambar yang soal berikan,  berbeda 
 											dengan aplikasi game Gampar saya, yaitu menebak soal yang berisi tulisan dan harus dijawab 
 											menggunakan gambar yang dapat dikombinasikan menjadi sebuah kalimat
+											<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/a2.PNG" width="800px"></img>
 										</p>
-										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/a2.PNG" width="800px"></img><br>
-										<h4>NOBAR</h4><br>
-										<p>
+										<hr>
+										<p style="font-size:12pt;">NOBAR</p><br>
+										<p style="font-size:11pt;">
 											Aplikasi ini berawal dari teman saya yaitu penjaga steam motor/cuci motor yang pelanggannya 
 											sering bosen dan jenuh menunggu lama jika steam sedang ramai dan selalu menitipkan motornya 
 											yang setelah selesai di cuci dia harus mengantarkan motor tersebut ke rumahnya.
 											Dengan  menggunakan  webview  pada  android  saya  membuat  aplikasi  menonton  kumpulankumpulan film yang bisa dinikmati jika sedang menunggu sampai motornya selesai dicuci.
 											Dengan  menggunakan  localserver  sehingga  aplikasi  dapat  dinikmati  secara  offline  dan 
 											lingkupnya hanya disekitaran tempat cuci motor.
+											<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/a3.PNG" width="800px"></img>
 										</p>
-										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/a3.PNG" width="800px"></img><br>
 										
-										<h4>PULSA DONG</h4><br>
-										<p>
+										<hr>
+										<p style="font-size:12pt;">PULSA DONG</p><br>
+										<p style="font-size:11pt;">
 											Aplikasi ini berawal dari kemalasan saya, jika pada tengah malam kuota internet habis dan males 
 											keluar mencari konter pulsa.
 											Maka  dari  itu  saya  membuat  sebuah  aplikasi  client  server  berupa  pengisian  pulsa  seperti 
@@ -286,19 +395,40 @@
 											perkuliahan sampai sekarang.
 											Aplikasi yang saya buat sering saya berikan pembeda dan ide-ide baru sehingga aplikasi saya 
 											sering dianggap aneh oleh teman kampus.
-										</p>
 										<img src="https://raw.githubusercontent.com/sutrisna/sutrisna.github.io/master/gambar/a4.PNG" width="800px"></img>
-									</div>
+										</p>
+										
+										
+										
+										</div>
+									
 								</div>
 							</div>
-							</div>
+						
 						</div>
 					</div>
-				
-				
-			</div>
-		</main>
-		
-		</div>
-	</body>
+					
+				</div> <!-- .cd-project-info -->
+			</li>
+		</ul> <!-- .cd-projects -->
+
+		<button class="scroll cd-text-replace">Scroll</button>
+	</div> <!-- .cd-project-container -->
+
+	<nav class="cd-primary-nav" id="primary-nav">
+		<ul>
+			<li class="cd-label">Profil</li>
+			<li><a href="#0">SUTRISNA</a></li>
+			<li><a href="#0">11 November 1992</a></li>
+			<li><a href="#0">089660470957</a></li>
+			<li><a href="#0">punyasutrisna@gmail.com</a></li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+	
+	</div>
+</main>
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
 </html>
